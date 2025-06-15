@@ -1,26 +1,95 @@
-<html> 
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<head> <title> Login </title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<body> 
-    <h1> Login</h1>
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
 
-    <div class="form-fundo">
-     <div class="form-login">
-        <form id="loginForm">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="ema/il" required />
-          
-          <lapel for="senha">Senha</lapel>
-          <input type="password" id="senha" name="senha" required />
-          <button type="submit">Entrar</button>
-        </form>
-     </div>
+    .form-fundo {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-login {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      color: #fff;
+      background-color: #1283f5;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #006ad3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Login</h1>
+
+  <div class="form-fundo">
+    <div class="form-login">
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <button type="submit">Entrar</button>
+      </form>
     </div>
-
-
-
-
-    
+  </div>
 </body>
+
 </html>
